@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/rails/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1857: XSS Vulnerability in the `sanitize` helper of Ruby on Rails]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1857/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1857</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91454">CVE-2013-1857</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91454">OSVDB-91454</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The sanitize helper in Ruby on Rails is designed to
+filter HTML and remove all tags and attributes which could be
+malicious. The code which ensured that URLs only contain supported
+protocols contained several bugs which could allow an attacker to
+embed a tag containing a URL which executes arbitrary javascript
+code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1856: XML Parsing Vulnerability affecting JRuby users]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1856/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1856</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91451">CVE-2013-1856</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91451">OSVDB-91451</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activesupport</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The ActiveSupport XML parsing functionality supports multiple
+pluggable backends. One backend supported for JRuby users is
+ActiveSupport::XmlMini_JDOM which makes use of the
+javax.xml.parsers.DocumentBuilder class. In some JVM configurations
+the default settings of that class can allow an attacker to construct
+XML which, when parsed, will contain the contents of arbitrary URLs
+including files from the application server. They may also allow for
+various denial of service attacks. Action Pack</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1855: XSS vulnerability in sanitize_css in Action Pack]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1855/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1855</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91452">CVE-2013-1855</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91452">OSVDB-91452</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>There is an XSS vulnerability in the <code>sanitize_css</code> method in Action
+Pack. Carefully crafted text can bypass the sanitization provided in
+the <code>sanitize_css</code> method in Action Pack</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1854: Symbol DoS vulnerability in Active Record]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1854/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1854</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91453">CVE-2013-1854</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91453">OSVDB-91453</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>When a hash is provided as the find value for a query, the keys of
+the hash may be converted to symbols. Carefully crafted requests can
+coerce <code>params[:name]</code> to return a hash, and the keys to that hash
+may be converted to symbols. Ruby symbols are not garbage collected,
+so an attacker can initiate a denial of service attack by creating a
+large number of symbols.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0277: Ruby on Rails Active Record +serialize+ Helper YAML Attribute Handling Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0277/"/>
+    <updated>2013-02-11T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0277</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90073">CVE-2013-0277</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90073">OSVDB-90073</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.17</code></p></li>
+<li><p><code>&gt;= 3.1.0</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in the +serialize+ helper in the Active Record.
+The issue is triggered when the system is configured to allow users to
+directly provide values to be serialized and deserialized using YAML.
+With a specially crafted YAML attribute, a remote attacker can deserialize
+arbitrary YAML and execute code associated with it.</p>
+]]></content>
+  </entry>
+  
+</feed>

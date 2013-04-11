@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: newrelic_rpm | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/newrelic-rpm/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0284: Ruby on Rails newrelic_rpm Gem Discloses Sensitive Information]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0284/"/>
+    <updated>2012-12-06T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0284</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90189">CVE-2013-0284</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90189">OSVDB-90189</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>newrelic_rpm</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 3.5.3.25</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>A bug in the Ruby agent causes database connection information and raw SQL
+statements to be transmitted to New Relic servers. The database connection
+information includes the database IP address, username, and password</p>
+]]></content>
+  </entry>
+  
+</feed>

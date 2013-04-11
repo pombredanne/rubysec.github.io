@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rack-cache | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/rack-cache/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-267: rack-cache Rubygem Sensitive HTTP Header Caching Weakness]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-267/"/>
+    <updated>2012-06-06T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-267</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/83077">CVE-2012-267</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/83077">OSVDB-83077</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>rack-cache</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 1.2</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Rack::Cache (rack-cache) contains a flaw related to the rubygem caching
+sensitive HTTP headers. This will result in a weakness that may make it
+easier for an attacker to gain access to a user's session via a specially
+crafted header.</p>
+]]></content>
+  </entry>
+  
+</feed>

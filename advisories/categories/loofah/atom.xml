@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: loofah | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/loofah/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[OSVDB-90945: Loofah HTML and XSS injection vulnerability]]></title>
+    <link href="http://rubysec.github.com/advisories/OSVDB-90945/"/>
+    <updated>2012-09-08T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/OSVDB-90945</id>
+    <content type="html"><![CDATA[<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/90945">OSVDB-90945</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>loofah</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;=  0.4.6</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Loofah Gem for Ruby contains a flaw that allows a remote cross-site
+scripting (XSS) attack. This flaw exists because the
+Loofah::HTML::Document#text function passes properly sanitized
+user-supplied input to the Loofah::XssFoliate and
+Loofah::Helpers#strip_tags functions which convert input back to
+text. This may allow an attacker to create a specially crafted
+request that would execute arbitrary script code in a user's browser
+within the trust relationship between their browser and the server.</p>
+]]></content>
+  </entry>
+  
+</feed>

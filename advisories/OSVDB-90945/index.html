@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Home - RubySec</title>
+  <title>OSVDB-90945: Loofah HTML and XSS injection vulnerability - RubySec</title>
   <meta name="author" content="RubySec">
 
   
-  <meta name="description" content="Advisory Database The Ruby advisory database seeks to serve as a canonical repository of vulnerabilities affecting ruby libraries. We are always &hellip;">
+  <meta name="description" content="OVSBD ID OSVDB-90945 GEM NAME loofah PATCHED VERSIONS &gt;= 0.4.6 DESCRIPTION Loofah Gem for Ruby contains a flaw that allows a remote cross-site &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rubysec.github.com">
+  <link rel="canonical" href="http://rubysec.github.com/advisories/OSVDB-90945">
   <link href="/favicon.ico" rel="icon">
   
   <link href="/assets/bootstrap/css/spacelab.min.css" rel="stylesheet" type="text/css">
@@ -89,26 +89,128 @@
     <div id="main">
       <div id="content">
         <div class="row">
-  <div class="span4">
-    <h2>Advisory Database</h2>
-    <p>
-    The Ruby advisory database seeks to serve as a canonical repository of vulnerabilities affecting ruby libraries.
-    </p>
-    <p>
-    We are always looking for contributors.
-    </p>
-    <a class="btn btn-large btn-github" href="https://github.com/rubysec/ruby-advisory-db/" target="_blank">
-      <i class="icon-github icon-2x pull-left"></i>
-      View Project<br>on GitHub</a>
-  </div>
-  <div class="span4">
-    <h2>Mailing List</h2>
-    <p>The rubysec-announce google group is our primary means of distribution.</p>
-    <p>Join our free mailing list to receive notifications on published advisories and information regarding recent vulnerabilities.</p>
-    <p><a class="btn" href="https://groups.google.com/group/rubysec-announce" target="_blank">View details &raquo;</a></p>
+  
+  <div class="span8">
+    
+  <header>
+    
+      <h1 class="entry-title">OSVDB-90945: Loofah HTML and XSS Injection Vulnerability</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-08T00:00:00-04:00" pubdate data-updated="true">Sep 8<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  
+  
+  <div class="entry-content"><h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/90945">OSVDB-90945</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>loofah</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;=  0.4.6</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Loofah Gem for Ruby contains a flaw that allows a remote cross-site
+scripting (XSS) attack. This flaw exists because the
+Loofah::HTML::Document#text function passes properly sanitized
+user-supplied input to the Loofah::XssFoliate and
+Loofah::Helpers#strip_tags functions which convert input back to
+text. This may allow an attacker to create a specially crafted
+request that would execute arbitrary script code in a user&#8217;s browser
+within the trust relationship between their browser and the server.</p>
+</div>
+
+  
+
+
+    <footer>
+      <p class="meta">
+        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">RubySec</span></span>
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-08T00:00:00-04:00" pubdate data-updated="true">Sep 8<span>th</span>, 2012</time>
+        
+
+<span class="categories">
+  
+    <a class='category' href='/advisories/categories/loofah/'>loofah</a>
+  
+</span>
+
+
+      </p>
+      
+        <div class="sharing">
+  <br/>
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rubysec.github.com/advisories/OSVDB-90945/" data-via="rubysec" data-counturl="http://rubysec.github.com/advisories/OSVDB-90945/" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+      <p class="meta">
+        
+          <a class="basic-alignment pull-left" href="/advisories/CVE-2012-6134/" title="Previous Post: CVE-2012-6134: Ruby on Rails omniauth-oauth2 Gem CSRF vulnerability">&laquo; CVE-2012-6134: Ruby on Rails omniauth-oauth2 Gem CSRF vulnerability</a>
+        
+        
+          <a class="basic-alignment pull-right" href="/advisories/CVE-2013-0284/" title="Next Post: CVE-2013-0284: Ruby on Rails newrelic_rpm Gem Discloses Sensitive Information">CVE-2013-0284: Ruby on Rails newrelic_rpm Gem Discloses Sensitive Information &raquo;</a>
+        
+      </p>
+    </footer>
+    
+    
   </div>
 
   
+    
   <div class="span4 sidebar">
     <div class="well">
       Contact us <a href="http://twitter.com/rubysec">@rubysec</a> (email coming soon), or chat in #rubysec on freenode.
@@ -151,7 +253,9 @@
   </div>
 
 
+  
 </div>
+
 
       </div>
     </div>

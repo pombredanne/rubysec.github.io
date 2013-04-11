@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dragonfly | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/dragonfly/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1756: Dragonfly Gem Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1756/"/>
+    <updated>2013-02-19T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1756</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.com/show/osvdb/90647">CVE-2013-1756</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.com/show/osvdb/90647">OSVDB-90647</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>dragonfly</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 0.9.13</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The Dragonfly gem contains a flaw that allows an attacker to run arbitrary code
+on a host machine using carefully crafted requests.</p>
+]]></content>
+  </entry>
+  
+</feed>

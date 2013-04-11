@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: activerecord | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/activerecord/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1854: Symbol DoS vulnerability in Active Record]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1854/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1854</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91453">CVE-2013-1854</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91453">OSVDB-91453</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>When a hash is provided as the find value for a query, the keys of
+the hash may be converted to symbols. Carefully crafted requests can
+coerce <code>params[:name]</code> to return a hash, and the keys to that hash
+may be converted to symbols. Ruby symbols are not garbage collected,
+so an attacker can initiate a denial of service attack by creating a
+large number of symbols.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0277: Ruby on Rails Active Record +serialize+ Helper YAML Attribute Handling Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0277/"/>
+    <updated>2013-02-11T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0277</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90073">CVE-2013-0277</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90073">OSVDB-90073</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.17</code></p></li>
+<li><p><code>&gt;= 3.1.0</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in the +serialize+ helper in the Active Record.
+The issue is triggered when the system is configured to allow users to
+directly provide values to be serialized and deserialized using YAML.
+With a specially crafted YAML attribute, a remote attacker can deserialize
+arbitrary YAML and execute code associated with it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0276: Ruby on Rails Active Record attr_protected Method Bypass]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0276/"/>
+    <updated>2013-02-11T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0276</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90072">CVE-2013-0276</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90072">OSVDB-90072</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.17</code></p></li>
+<li><p><code>~&gt; 3.1.11</code></p></li>
+<li><p><code>&gt;= 3.2.12</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in the attr_protected method of the
+Active Record. The issue is triggered during the handling of a specially
+crafted request, which may allow a remote attacker to bypass protection
+mechanisms and alter values that would otherwise be protected.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0155: Ruby on Rails Active Record JSON Parameter Parsing Query Bypass]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0155/"/>
+    <updated>2013-01-08T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0155</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89025">CVE-2013-0155</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89025">OSVDB-89025</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.16</code></p></li>
+<li><p><code>~&gt; 3.0.19</code></p></li>
+<li><p><code>~&gt; 3.1.10</code></p></li>
+<li><p><code>&gt;= 3.2.11</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in the Active Record. The issue is due to an
+error with the way the Active Record handles parameters combined with an
+error during the parsing of the JSON parameters. This may allow a remote
+attacker to bypass restrictions abd issue unexpected database queries with
+"IS NULL" or empty where clauses, and forcing the query to unexpectedly check
+for NULL or eliminate a WHERE clause.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-2661: Ruby on Rails where Method ActiveRecord Class SQL Injection]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-2661/"/>
+    <updated>2012-05-31T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-2661</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/82403">CVE-2012-2661</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/82403">OSVDB-82403</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activerecord</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.0.13</code></p></li>
+<li><p><code>~&gt; 3.1.5</code></p></li>
+<li><p><code>&gt;= 3.2.4</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails (RoR) contains a flaw that may allow an attacker to carry out
+an SQL injection attack. The issue is due to the ActiveRecord class not
+properly sanitizing user-supplied input to the 'where' method. This may
+allow an attacker to inject or manipulate SQL queries in an application
+built on RoR, allowing for the manipulation or disclosure of arbitrary data.</p>
+]]></content>
+  </entry>
+  
+</feed>

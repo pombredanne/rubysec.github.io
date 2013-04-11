@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: json | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/json/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0269: Ruby on Rails JSON Gem Arbitrary Symbol Creation Remote DoS]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0269/"/>
+    <updated>2013-02-11T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0269</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90074">CVE-2013-0269</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://direct.osvdb.org/show/osvdb/90074">OSVDB-90074</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>json</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 1.5.5</code></p></li>
+<li><p><code>~&gt; 1.6.8</code></p></li>
+<li><p><code>&gt;= 1.7.7</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw that may allow a remote denial of service.
+The issue is due to the JSON gem being tricked in to generating Ruby symbols
+during the parsing of certain JSON documents. Since Ruby symbols are not
+garbage collected, a remote attacker can crash a users system. This also may
+allow the attacker to create arbitrary objects that may be used to bypass
+certain security mechanisms and potentially allow SQL injection attacks to
+be conducted.</p>
+]]></content>
+  </entry>
+  
+</feed>

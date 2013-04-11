@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: actionpack | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/actionpack/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1857: XSS Vulnerability in the `sanitize` helper of Ruby on Rails]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1857/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1857</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91454">CVE-2013-1857</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/91454">OSVDB-91454</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The sanitize helper in Ruby on Rails is designed to
+filter HTML and remove all tags and attributes which could be
+malicious. The code which ensured that URLs only contain supported
+protocols contained several bugs which could allow an attacker to
+embed a tag containing a URL which executes arbitrary javascript
+code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1855: XSS vulnerability in sanitize_css in Action Pack]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1855/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1855</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91452">CVE-2013-1855</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91452">OSVDB-91452</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.18</code></p></li>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>There is an XSS vulnerability in the <code>sanitize_css</code> method in Action
+Pack. Carefully crafted text can bypass the sanitization provided in
+the <code>sanitize_css</code> method in Action Pack</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0156: Ruby on Rails params_parser.rb Action Pack Type Casting Parameter Parsing Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0156/"/>
+    <updated>2013-01-08T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0156</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89026">CVE-2013-0156</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89026">OSVDB-89026</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.15</code></p></li>
+<li><p><code>~&gt; 3.0.19</code></p></li>
+<li><p><code>~&gt; 3.1.10</code></p></li>
+<li><p><code>&gt;= 3.2.11</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in params_parser.rb of the Action Pack.
+The issue is triggered when a type casting error occurs during the parsing
+of parameters. This may allow a remote attacker to potentially execute
+arbitrary code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-3465: Ruby on Rails strip_tags Helper Method XSS]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-3465/"/>
+    <updated>2012-08-09T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-3465</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/84513">CVE-2012-3465</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/84513">OSVDB-84513</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.0.17</code></p></li>
+<li><p><code>~&gt; 3.1.8</code></p></li>
+<li><p><code>&gt;= 3.2.8</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw that allows a remote cross-site scripting (XSS)
+attack. This flaw exists because the application does not validate input
+passed via the 'strip_tags' helper method before returning it to the user.
+This may allow a user to create a specially crafted request that would
+execute arbitrary script code in a user's browser within the trust
+relationship between their browser and the server.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-3463: Ruby on Rails select_tag Helper Method prompt Value XSS]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-3463/"/>
+    <updated>2012-08-09T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-3463</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/84515">CVE-2012-3463</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/84515">OSVDB-84515</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>actionpack</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.0.17</code></p></li>
+<li><p><code>~&gt; 3.1.8</code></p></li>
+<li><p><code>&gt;= 3.2.8</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw that allows a remote cross-site scripting (XSS)
+attack. This flaw exists because input passed via the prompt value is not
+properly sanitized by the select_tag helper method before returning it to
+the user. This may allow a user to create a specially crafted request that
+would execute arbitrary script code in a user's browser within the trust
+relationship between their browser and the server.</p>
+]]></content>
+  </entry>
+  
+</feed>

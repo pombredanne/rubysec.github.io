@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: activesupport | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/activesupport/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1856: XML Parsing Vulnerability affecting JRuby users]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1856/"/>
+    <updated>2013-03-19T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1856</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91451">CVE-2013-1856</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/91451">OSVDB-91451</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activesupport</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.1.12</code></p></li>
+<li><p><code>&gt;= 3.2.13</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The ActiveSupport XML parsing functionality supports multiple
+pluggable backends. One backend supported for JRuby users is
+ActiveSupport::XmlMini_JDOM which makes use of the
+javax.xml.parsers.DocumentBuilder class. In some JVM configurations
+the default settings of that class can allow an attacker to construct
+XML which, when parsed, will contain the contents of arbitrary URLs
+including files from the application server. They may also allow for
+various denial of service attacks. Action Pack</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0333: Ruby on Rails JSON Parser Crafted Payload YAML Subset Decoding Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0333/"/>
+    <updated>2013-01-28T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0333</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89594">CVE-2013-0333</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89594">OSVDB-89594</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activesupport</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 2.3.16</code></p></li>
+<li><p><code>&gt;= 3.0.20</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw in the JSON parser. Rails supports multiple
+parsing backends, one of which involves transforming JSON into YAML via the
+YAML parser. With a specially crafted payload, an attacker can subvert the
+backend into decoding a subset of YAML. This may allow a remote attacker to
+bypass restrictions, allowing them to bypass authentication systems, inject
+arbitrary SQL, inject and execute arbitrary code, or perform a DoS attack on
+a Rails application.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-3464: Ruby on Rails HTML Escaping Code XSS]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-3464/"/>
+    <updated>2012-08-09T00:00:00-04:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-3464</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/84516">CVE-2012-3464</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://www.osvdb.org/show/osvdb/84516">OSVDB-84516</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activesupport</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.0.17</code></p></li>
+<li><p><code>~&gt; 3.1.8</code></p></li>
+<li><p><code>&gt;= 3.2.8</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw that allows a remote cross-site scripting (XSS)
+attack. This flaw exists because the HTML escaping code functionality does
+not properly escape a single quote character. This may allow a user to create
+a specially crafted request that would execute arbitrary script code in a
+user's browser within the trust relationship between their browser and the
+server.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2012-1098: Ruby on Rails SafeBuffer Object [] Direct Manipulation XSS]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2012-1098/"/>
+    <updated>2012-03-01T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2012-1098</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/79726">CVE-2012-1098</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/79726">OSVDB-79726</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>activesupport</li>
+</ul>
+
+
+<h3>FRAMEWORK</h3>
+
+<ul>
+<li>rails</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 3.0.12</code></p></li>
+<li><p><code>~&gt; 3.1.4</code></p></li>
+<li><p><code>&gt;= 3.2.2</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Ruby on Rails contains a flaw that allows a remote cross-site scripting (XSS)
+attack. This flaw exists because athe application does not validate direct
+manipulations of SafeBuffer objects via '[]' and other methods. This may
+allow a user to create a specially crafted request that would execute
+arbitrary script code in a user's browser within the trust relationship
+between their browser and the server.</p>
+]]></content>
+  </entry>
+  
+</feed>

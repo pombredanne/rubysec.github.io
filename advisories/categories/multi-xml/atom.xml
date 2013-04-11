@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: multi_xml | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/multi-xml/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0175: multi_xml Gem for Ruby XML Parameter Parsing Remote Command Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0175/"/>
+    <updated>2013-01-11T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0175</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89148">CVE-2013-0175</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89148">OSVDB-89148</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>multi_xml</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 0.5.2</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>The multi_xml Gem for Ruby contains a flaw that is triggered when an error
+occurs during the parsing of the 'XML' parameter. With a crafted request
+containing arbitrary symbol and yaml types, a remote attacker can execute
+arbitrary commands.</p>
+]]></content>
+  </entry>
+  
+</feed>

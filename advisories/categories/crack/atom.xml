@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: crack | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/crack/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1800: crack Gem for Ruby Type Casting Parameter Parsing Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1800/"/>
+    <updated>2013-01-09T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1800</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90742">CVE-2013-1800</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90742">OSVDB-90742</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>crack</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 0.3.2</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>crack Gem for Ruby contains a flaw that is triggered when a type casting
+error occurs during the parsing of parameters. This may allow a
+context-dependent attacker to potentially execute arbitrary code.</p>
+]]></content>
+  </entry>
+  
+</feed>

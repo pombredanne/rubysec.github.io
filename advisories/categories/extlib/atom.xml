@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: extlib | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/extlib/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-1802: extlib Gem for Ruby Type Casting Parameter Parsing Remote Code Execution]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-1802/"/>
+    <updated>2013-01-08T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-1802</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90740">CVE-2013-1802</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/90740">OSVDB-90740</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>extlib</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt;= 0.9.16</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>extlib Gem for Ruby contains a flaw that is triggered when a type casting
+error occurs during the parsing of parameters. This may allow a
+context-dependent attacker to potentially execute arbitrary code.</p>
+]]></content>
+  </entry>
+  
+</feed>

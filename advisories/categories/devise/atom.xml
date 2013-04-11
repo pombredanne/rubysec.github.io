@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: devise | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/devise/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2013-0233: Devise Database Type Conversion Crafted Request Parsing Security Bypass]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2013-0233/"/>
+    <updated>2013-01-28T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2013-0233</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89642">CVE-2013-0233</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/89642">OSVDB-89642</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>devise</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><p><code>~&gt; 1.5.4</code></p></li>
+<li><p><code>~&gt; 2.0.5</code></p></li>
+<li><p><code>~&gt; 2.1.3</code></p></li>
+<li><p><code>&gt;= 2.2.3</code></p></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Devise contains a flaw that is triggered during when a type conversion error
+occurs during the parsing of a malformed request. With a specially crafted
+request, a remote attacker can bypass security restrictions.</p>
+]]></content>
+  </entry>
+  
+</feed>

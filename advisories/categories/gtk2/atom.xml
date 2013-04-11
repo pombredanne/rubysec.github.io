@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gtk2 | RubySec]]></title>
+  <link href="http://rubysec.github.com/advisories/categories/gtk2/atom.xml" rel="self"/>
+  <link href="http://rubysec.github.com/"/>
+  <updated>2013-04-11T18:51:44-04:00</updated>
+  <id>http://rubysec.github.com/</id>
+  <author>
+    <name><![CDATA[RubySec]]></name>
+    <email><![CDATA[rubysec-announce@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CVE-2007-6183: Ruby-GNOME2 gtk/src/rbgtkmessagedialog.c Gtk::MessageDialog.new() Function Format String]]></title>
+    <link href="http://rubysec.github.com/advisories/CVE-2007-6183/"/>
+    <updated>2007-11-27T00:00:00-05:00</updated>
+    <id>http://rubysec.github.com/advisories/CVE-2007-6183</id>
+    <content type="html"><![CDATA[<h3>CVE ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/40774">CVE-2007-6183</a></li>
+</ul>
+
+
+<h3>OVSBD ID</h3>
+
+<ul>
+<li><a href="http://osvdb.org/show/osvdb/40774">OSVDB-40774</a></li>
+</ul>
+
+
+<h3>GEM NAME</h3>
+
+<ul>
+<li>gtk2</li>
+</ul>
+
+
+<h3>PATCHED VERSIONS</h3>
+
+<ul>
+<li><code>&gt; 0.16.0</code></li>
+</ul>
+
+
+<h3>DESCRIPTION</h3>
+
+<p>Format string vulnerability in the mdiag_initialize function in
+gtk/src/rbgtkmessagedialog.c in Ruby-GNOME 2 (aka Ruby/Gnome2) 0.16.0, and
+SVN versions before 20071127, allows context-dependent attackers to execute
+arbitrary code via format string specifiers in the message parameter.</p>
+]]></content>
+  </entry>
+  
+</feed>
